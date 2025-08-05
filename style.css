@@ -193,6 +193,7 @@ body {
     max-width: 100%;
     margin: 20px auto;
     padding: 18px;
+    flex-wrap: wrap; /* ✅ บรรทัดนี้ช่วยให้ห่อเมื่อจอเล็ก */
   }
   .intro-box-contact {
     width: 99%;
@@ -205,10 +206,11 @@ body {
   }
   .performance-item {
     flex: 0 0 calc(50% - 20px);
+    white-space: nowrap;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 200px) {
   .profile-container {
     padding-top: 20px;
   }
@@ -218,12 +220,14 @@ body {
     max-width: 100%;
     margin: 10px auto;
     padding: 10px;
+    flex-wrap: wrap; /* ✅ บรรทัดนี้ช่วยให้ห่อเมื่อจอเล็ก */
   }
   .intro-box-performance {
     width: 100%;
     max-width: 100%;
     margin: 10px auto;
     padding: 10px;
+    flex-wrap: wrap; /* ✅ บรรทัดนี้ช่วยให้ห่อเมื่อจอเล็ก */
   }
   .intro-box-contact {
     width: 100%;
@@ -244,10 +248,12 @@ body {
   }
    .performance-grid {
     gap: 10px;
+    flex-wrap: wrap; /* ✅ บรรทัดนี้ช่วยให้ห่อเมื่อจอเล็ก */
   }
   .performance-item {
     flex: 0 0 100%;
     padding: 8px;
+    white-space: nowrap;
   }
   .performance-item img {
     width: 48px;
