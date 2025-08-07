@@ -189,6 +189,7 @@ body {
     padding: 18px;
   }
   .intro-box-performance {
+    display: flex;
     width: 99%;
     max-width: 100%;
     margin: 20px auto;
@@ -206,7 +207,11 @@ body {
   }
   .performance-item {
     flex: 0 0 calc(50% - 20px);
-    white-space: nowrap;
+  }
+   .performance-grid {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap; /* ✅ บรรทัดนี้ช่วยให้ห่อเมื่อจอเล็ก */
   }
 }
 
@@ -247,13 +252,14 @@ body {
     height: 48px;
   }
    .performance-grid {
+    display: flex;
     gap: 10px;
     flex-wrap: wrap; /* ✅ บรรทัดนี้ช่วยให้ห่อเมื่อจอเล็ก */
   }
   .performance-item {
     flex: 0 0 100%;
     padding: 8px;
-    white-space: nowrap;
+    flex-wrap: wrap; /* ✅ บรรทัดนี้ช่วยให้ห่อเมื่อจอเล็ก */
   }
   .performance-item img {
     width: 48px;
